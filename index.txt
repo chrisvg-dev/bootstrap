@@ -1,0 +1,125 @@
+    <?php require_once 'encabezado2.php'; ?>
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>SE|ITSAV</title>
+      <!-- Dile al navegador que responda al ancho de la pantalla -->
+      <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+      <?php require_once 'links.php'; ?>
+
+      <!-- Google Font -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+      </head>
+
+
+<script src="./controlador/FormularioSuperacion.js"></script>
+      <body ng-controller="superacionCtrl" class="hold-transition skin-blue sidebar-mini">
+      <div class="wrapper">
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+            <section class="content-header">
+            <h1>
+            Dashboard
+            <small>Control panel</small>
+            </h1>
+            <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i>INICIO</a></li>
+            <li class="active">Dashboard</li>
+            </ol>
+
+        </section>
+
+
+<br>
+<div class="row">
+
+
+   <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-aqua">
+            <div class="inner">
+              <h3><?php require './modelo/C_Egresado.php'; ?>
+
+             <p>Total de Enuestados</p>
+            </div>
+            <div class="icon">
+              <i class="glyphicon glyphicon-user"></i>
+            </div>
+            <a href="#" class="small-box-footer">Más Información<i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-green">
+            <div class="inner">
+         <h3><?php require './modelo/C_Egresado.php';?>
+
+
+              <p>Titulados</p>
+            </div>
+            <div class="icon">
+              <i class="glyphicon glyphicon-education"></i>
+            </div>
+            <a href="#" class="small-box-footer">Más Información<i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-red">
+            <div class="inner">
+              <h3><?php require './modelo/C_Egresado.php'; ?>
+
+              <p>No Titulado</p>
+            </div>
+            <div class="icon">
+              <i class="glyphicon glyphicon-education"></i>
+            </div>
+            <a href="#" class="small-box-footer">Más Información<i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+
+
+   <!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-yellow">
+            <div class="inner">
+              <h3><?php require './modelo/C_Egresado.php'; ?>
+
+          <p>Total sin Empleo</p>
+            </div>
+            <div class="icon">
+              <i class="glyphicon glyphicon-education"></i>
+            </div>
+            <a href="#" class="small-box-footer">Más Información<i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+      </div>
+
+
+
+
+
+
+      </section>
+      <!-- /.content -->
+    </div>
+   <?php require_once 'pie.php'; ?>
+  <?php require_once 'cambiarcolor.php'; ?>
+    
+  </div>
+  <!-- ./wrapper -->
+  <?php require_once 'scrips.php'; ?>
+
+  </body>
+  </html>
